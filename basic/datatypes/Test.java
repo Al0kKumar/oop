@@ -51,6 +51,84 @@ public class Test {
         test.charAt(0);
         test.substring(0,4);
 
+
+        int[] arr = new int[5]; // array defined of 5 size or 
+
+        int[] nayaarray = {1,2,3};
+
+
+
+
+        // OOPs
+
+        Car car = new Car("something");
+    //    car.name = "kuch bhi";
+        car.setSpeed(120);
+
+        car.drive();
+        System.out.println(car.getSpeed());
         System.out.println("ok");
+
+        // method overloading(compile time polymorphism) example
+        Printer printer = new Printer();
+        printer.print("Hello");
+        printer.print(10);
+        printer.print(2.98);
+
+    }
+}
+
+class Printer{
+
+    void print(int a){
+        System.out.println("Integer is : " + a);
+    }
+
+    void print(String str){
+        System.out.println("String is : " + str);
+    }
+     void print(double d){
+        System.out.println("Double is : " + d);
+     }
+}
+
+
+// Abtract class concept 
+abstract class Animal{
+
+    abstract void sayhello();
+    abstract void saybye();
+}
+
+class Dog extends Animal{
+
+    void sayhello(){
+        System.out.println("bhow bhow!");
+    }
+
+    void saybye(){
+        System.out.println("by bye !");
+    }
+}
+
+
+
+interface Mobile{
+
+    void makecall();
+}
+
+interface Music{
+    void play();
+}
+
+class Smartphone implements Mobile, Music{
+
+    public void makecall(){
+        System.out.println("making the call...");
+    }
+
+    public void play(){
+        System.out.println("playing music");
     }
 }
