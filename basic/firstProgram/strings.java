@@ -7,7 +7,7 @@ public class strings {
     public static void  main(String[] args){
 
         String str = "alok";
-        str.substring(0,8)
+        str.substring(0,8);
         // String name1 = "alok";
         // String name2 = new String("alok");
 
